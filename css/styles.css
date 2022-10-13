@@ -1,0 +1,94 @@
+:root{
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+
+--fonte: "Red Hat Display";
+}
+
+body{
+    background-color: var(--Pale-blue);
+    font-family: var(--fonte);
+}
+main{
+    margin: 3em 1em;
+    border-radius: 1em;
+    background-color: var(--Very-pale-blue);
+    text-align: center;
+}
+.banner__imagem{
+    width: 100%;
+    border-radius: 1em 1em 0 0;
+}
+
+.principal{
+    margin: 1em;
+}
+.principal__titulo{
+    font-weight: 900;
+    margin-top: 2em;
+}
+.principal__texto{
+    margin: 1.5em;
+    color: var(--Desaturated-blue);
+    line-height: 1.5em;
+}
+.principal__pagamento{
+    display: flex;
+    background-color: var(--Very-pale-blue);
+    margin: 1em 0;
+    padding: 1em;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.principal__pagamento-link{
+    margin-left: 1.5em;
+    font-weight: 700;
+}
+.principal__pagamento-link:hover{
+    text-decoration: none;
+}
+.principal__pagamento-plano h2{
+    font-weight: 700;
+}
+.principal__pagamento-plano p{
+    color: var(--Desaturated-blue);
+}
+.principal__botoes{
+    margin: 1em 0 2em 0;
+}
+.pagamento{
+    display: block;
+    border: solid;
+    border-radius: 1em;
+    padding: 1em;
+    text-decoration: none;
+    font-weight: 700;
+}
+.principal__pagamento-procede{
+     background-color: var(--Bright-blue);
+     color: #ffffff;
+}
+.principal__pagamento-procede:hover{
+    background-color: var(--Dark-blue);
+}
+.principal__pagamento-cancela{
+    border: none;
+    color: var(--Desaturated-blue);
+}
+.principal__pagamento-cancela:hover{
+    color: var(--Dark-blue);
+}
+
+@media screen and (min-width: 1440px) {
+    body{
+        width: 375px;
+        display: block;
+        margin: 5em auto;
+
+
+    }
+}
